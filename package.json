@@ -1,0 +1,23 @@
+{
+  "name": "pagina-tds",
+  "version": "0.0.1",
+  "description": "Sitio web del gremio y de tds",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tds-esi/pagina.git"
+  },
+  "author": "tds-esi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tds-esi/pagina/issues"
+  },
+  "homepage": "https://github.com/tds-esi/pagina#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}
