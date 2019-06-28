@@ -2,8 +2,10 @@ var express = require('express')
 var app = express()
 const PORT = 8080
 
+app.set('view engine','pug')
+
 app.get('/',(req,res) => {
-	res.send('TDS y gremio')
+	res.render('landing')
 })
 
 
