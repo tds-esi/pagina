@@ -1,0 +1,54 @@
+body{
+  background: #fff;
+}
+.block{
+  background: #f5f5f5;
+  border: #ddd 1px solid;
+  border-radius: 20px;
+  width: 50%;
+  margin-left: 25%;
+  padding: 25px 15px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+.block a{
+  text-decoration: none;
+}
+
+.block a{
+  color: black;
+}
+
+.block img{
+  width: 99%;
+
+}
+
+.creador{
+  font-size: 15px;
+
+}
+
+.categoria{
+  border: 0px;
+  padding: 4px 6px;
+  color: white;
+  text-shadow: 1px 1px #555;
+  box-shadow: 1px 1px #555;
+  border-radius: 7px;
+  margin-right: 5px;
+}
+
+.subtitulo{
+  margin: 5px 2px;
+}
+
+.fecha{
+  color: grey;
+  font-size: 14px;
+}
+
+.text-body{
+  margin-top: 20px;
+}

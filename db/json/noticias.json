@@ -1,0 +1,21 @@
+[
+  {
+    "titulo": "Taller creado",
+    "descripcion": "Hemos creado un taller nuevo",
+    "fecha": "12/2/2019",
+    "text":"Hemos creado nuevos talleres para las personas interesadas en desarollar sus habilidades en informatica",
+    "img": "/static/buceo.jpg",
+    "categoria": [{"name":"taller","color":"grey"}, {"name":"javascript","color":"yellow"}],
+    "creador": "Agustin Suarez",
+    "creador_id": 0
+  },{
+    "titulo": "Gremio creado",
+    "descripcion": "Hemos creado un gremio",
+    "fecha": "28/11/2018",
+    "text": "Hemos creado el gremi XDlol",
+    "img": "/static/buceo.jpg",
+    "categoria": [{"name":"gremio","color":"blue"}],
+    "creador": "Agustin Suarez",
+    "creador_id": 0
+  }
+]

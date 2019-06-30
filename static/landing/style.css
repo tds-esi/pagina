@@ -1,6 +1,9 @@
-body{
-  text-align: center;
+.contenido{
+  
 }
-footer{
 
+.lista-centrada {
+  margin-left: 35%;
+  width: 30%;
+  text-align: left;
 }

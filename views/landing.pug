@@ -1,12 +1,18 @@
 extends ./modules/basic.pug
 block head
+  link(rel="stylesheet" href="/static/style.css")
   link(rel="stylesheet" href="/static/landing/style.css")
+    
 
 block body
-  h1 Bienvenido a la pagina del gremio!
-  p La pagina esta en desarollo, puedes contribuir 
-    a(href="https://github.com/tds-esi/pagina") aqui
-  
+  include ./modules/header.pug
+  div.contenido
+    h1 Landing de la pagina del gremio!
+    br
+    p La pagina esta en desarollo, puedes contribuir 
+      a(href="https://github.com/tds-esi/pagina") aqui
+      
 block footer
+  br
   p Contactanos 
     a(href="mailto:gremioestudiantilesi@gmail.com") gremioestudiantilesi@gmail.com

@@ -1,0 +1,27 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.logo-nav{
+  height:75px;
+  float: left;
+  margin-left: 20px;
+}
+nav{
+  background: #0c0c0c;
+  height: 75px;
+}
+
+nav ul {
+  float: right;
+  margin: 30px 50px;
+}
+nav li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+nav li a{
+  text-decoration: none;
+  color: white;
+}

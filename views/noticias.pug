@@ -1,0 +1,20 @@
+extends ./modules/basic.pug
+block head
+  link(rel="stylesheet" href="/static/style.css")
+  link(rel="stylesheet" href="/static/noticias/style.css")
+    
+block body
+  include ./modules/header.pug  
+  - for (var i = 0; i < noticias.length; i++) 
+    div.block
+      a(href="/noticias/"+i)
+        h1= noticias[i].titulo
+          a(href="/u/"+noticias[i].creador_id).creador
+            i= " por "+noticias[i].creador
+        div.categorias
+          - for (var ii = 0; ii < noticias[i].categoria.length;ii++)
+            button(style="background:"+noticias[i].categoria[ii].color).categoria= noticias[i].categoria[ii].name
+        p.subtitulo= noticias[i].descripcion
+        img(src=""+noticias[i].img)
+        i.fecha= noticias[i].fecha
+        
