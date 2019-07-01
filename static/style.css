@@ -2,6 +2,12 @@
   margin: 0px;
   padding: 0px;
 }
+body{
+  padding-bottom: 150px;
+  min-height: 100vh;
+  position: relative;
+}
+
 .logo-nav{
   height:75px;
   float: left;
@@ -24,4 +30,41 @@ nav li {
 nav li a{
   text-decoration: none;
   color: white;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #222;
+  padding: 40px 0;
+  margin-top: 30px;
+}
+
+footer ul{
+
+}
+
+footer li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer li a{
+    color: white;
+    text-decoration: none;
+}
+
+.social-links{
+  float:right;
+  margin-right: 5%;
+}
+
+.footer-nav{
+  float: left;
+  margin-left: 5%;
+}
+.calendario{
+  margin: 30px auto;
+  text-align: center;
 }
