@@ -1,0 +1,14 @@
+extends ./modules/basic.pug
+block head
+  link(rel="stylesheet" href="/static/style.css")
+  link(rel="stylesheet" href="/static/noticias/style.css")
+    
+block body
+  include ./modules/header.pug  
+  - for (var i = 0; i < documentos.length; i++) 
+    div.block
+      a(href=""+documentos[i].url)
+        h1= documentos[i].titulo
+        p.subtitulo= documentos[i].descripcion
+        i.fecha= documentos[i].fecha
+        

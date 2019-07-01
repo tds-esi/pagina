@@ -1,16 +1,35 @@
 var fs = require('fs')
 
+// Noticias
 var getNoticias = (callback) => {
-  fs.readFile('./db/json/noticias.json', (err, data) => {
+  fs.readFile('./db/json/noticias.json', (err, noticias) => {
   if (err) throw err;
-  callback(JSON.parse(data));
+  callback(JSON.parse(noticias));
 });
 }
 
 var addNoticia = (noticia, callback) => {
   getNoticias((noticias) => {
     noticias.push(noticia)
-    fs.writeFile('/db/json/noticias', JSON.stringify(noticias,null,2), (err) => {
+    fs.writeFile('/db/json/noticias.json', JSON.stringify(noticias,null,2), (err) => {
+      if (err) throw err;
+      callback()
+    });
+  })
+}
+
+// Documentos
+var getDocumentos = (callback) => {
+  fs.readFile('./db/json/documentos.json', (err, documentos) => {
+  if (err) throw err;
+  callback(JSON.parse(documentos));
+});
+}
+
+var addDocumento = (documento, callback) => {
+  getDocumentos((documentos) => {
+    noticias.push(documento)
+    fs.writeFile('/db/json/documentos.json', JSON.stringify(documentos,null,2), (err) => {
       if (err) throw err;
       callback()
     });
@@ -19,5 +38,7 @@ var addNoticia = (noticia, callback) => {
 
 module.exports = {
   getNoticias,
-  addNoticia
+  addNoticia,
+  getDocumentos,
+  addDocumento
 }

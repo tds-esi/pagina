@@ -1,8 +1,11 @@
 var express = require('express')
 var router = express.Router()
+var db = require('../db/db.js')
 
 router.get('/',(req,res) => {
-  res.render('implementar')
+  db.getDocumentos((documentos) => {
+    res.render('documentos', {documentos})
+  })
 })
 
 
