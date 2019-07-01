@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 var bodyParser = require('body-parser')
 
-const PORT = 8080
+const PORT = process.env.PORT || 8080
 
 var route_noticias = require('./routes/noticias.js')
 var route_calendario = require('./routes/calendario.js')
