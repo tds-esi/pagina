@@ -1,10 +1,8 @@
-extends ./modules/basic.pug
+extends ./modules/normal.pug
 block head
-  link(rel="stylesheet" href="/static/style.css")
   link(rel="stylesheet" href="/static/noticias/style.css")
     
 block body
-  include ./modules/header.pug
   div.block
     h1= noticia.titulo
       a(href="/u/"+noticia.creador_id).creador
@@ -17,4 +15,3 @@ block body
     i.fecha= noticia.fecha  
     p.text-body=noticia.text
 block footer
-  include ./modules/footer.pug

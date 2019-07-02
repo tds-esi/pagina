@@ -1,11 +1,9 @@
-extends ./modules/basic.pug
+extends ./modules/normal.pug
 block head
-  link(rel="stylesheet" href="/static/style.css")
   link(rel="stylesheet" href="/static/landing/style.css")
     
 
 block body
-  include ./modules/header.pug
   div.contenido
     h1 Landing de la pagina del gremio!
     br
@@ -16,4 +14,3 @@ block body
   p Contactanos 
     a(href="mailto:gremioestudiantilesi@gmail.com") gremioestudiantilesi@gmail.com
 block footer
-  include ./modules/footer.pug

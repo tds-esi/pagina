@@ -1,10 +1,8 @@
-extends ./modules/basic.pug
+extends ./modules/normal.pug
 block head
-  link(rel="stylesheet" href="/static/style.css")
   link(rel="stylesheet" href="/static/noticias/style.css")
     
 block body
-  include ./modules/header.pug  
   - for (var i = 0; i < documentos.length; i++) 
     div.block
       a(href=""+documentos[i].url)
@@ -12,4 +10,3 @@ block body
         p.subtitulo= documentos[i].descripcion
         i.fecha= documentos[i].fecha
 block footer
-  include ./modules/footer.pug
