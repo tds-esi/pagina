@@ -4,7 +4,6 @@ var bodyParser = require('body-parser')
 
 const PORT = process.env.PORT || 8080
 
-console.log(PORT)
 var route_noticias = require('./routes/noticias.js')
 var route_calendario = require('./routes/calendario.js')
 var route_documentos = require('./routes/documentos.js')
