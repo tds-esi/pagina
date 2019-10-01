@@ -1,15 +1,21 @@
-extends ./modules/normal.pug
-block head
-  link(rel="stylesheet" href="/static/landing/style.css")
-    
+doctype html
+html(lang="es")
+  head
+    meta(charset="utf-8")
+    link(rel="icon" type="image/png" href="static/favicon.png")
+    - if(title)
+      title= title 
+    - else
+      title= "Gremio ESI" 
+    link(rel="stylesheet" href="/static/landing/style.css")
+    link(rel="stylesheet" href="/static/style.css")
+  
+  body
+    .hero
+      include ./modules/header.pug  
+      h1.hero-text Gremio de 
+        span.hero-high ESI Buceo
+    h2.title Conoce mas de nosotros
 
-block body
-  div.contenido
-    h1 Landing de la pagina del gremio!
-    br
-    p La pagina esta en desarollo, puedes contribuir 
-      a(href="https://github.com/tds-esi/pagina") aqui
-    br
-    p Contactanos 
-      a(href="mailto:gremioestudiantilesi@gmail.com") gremioestudiantilesi@gmail.com
-block footer
+  footer
+    include ./modules/footer.pug
