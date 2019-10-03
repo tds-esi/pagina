@@ -9,10 +9,10 @@
     "creador": "Agustin Suarez",
     "creador_id": 0
   },{
-    "titulo": "Gremio creado",
-    "descripcion": "Hemos creado un gremio",
+    "titulo": "Seccion agregada, falta implementar funcionalidad",
+    "descripcion": "Ayduar en GitHub",
     "fecha": "28/11/2018",
-    "text": "Hemos creado el gremi XDlol",
+    "text": "Hemos creado el gremio",
     "img": "/static/buceo.jpg",
     "categoria": [{"name":"gremio","color":"blue"}],
     "creador": "Agustin Suarez",

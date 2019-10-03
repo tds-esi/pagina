@@ -111,3 +111,8 @@ footer li a{
   border-bottom: #AAA 1px solid;
   width: auto;
 }
+
+.block{
+  width: 60%;
+  margin: 20px auto;
+}
